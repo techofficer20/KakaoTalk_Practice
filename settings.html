@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Font Awesome css 링크 -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.9.0/css/all.css"
+    />
+    <title>Settings | Kakao Clone</title>
+  </head>
+  <body>
+    <!-- 스테이터스 바 (최상단 바) 코드 -->
+    <div class="status-bar">
+      <!-- 왜 열 두개 필요? 첫 번째 열은 시간, 두 번째 열은 아이콘들 배치 -->
+      <!-- 왜 div? div는 박스 같은 것이 필요할 때 쓴다. 기본적으로 block (아래 배치) 속성이 있다. -->
+      <div class="status-bar__column">
+        <!-- span 태그는 주로 텍스트에서 쓴다고 했다. -->
+        <span class="status-bar__clock">13:54</span>
+      </div>
+      <!-- div는 박스 같은 것이 필요할 때 쓰는데, block 속성 때문에 줄바꿈이 된다. 이건 나중에 수정해야겠지? -->
+      <div class="status-bar__column">
+        <!-- i 태그를 font awesome에서 긁어오긴 했지만, span 태그처럼 inline(옆으로 배치)속성이 있어서 줄바꿈은 없다! -->
+        <i class="fas fa-clock"></i>
+        <i class="fas fa-volume-mute"></i>
+        <i class="fas fa-wifi"></i>
+        <span class="status-bar__battery-level">100%</span>
+        <i class="fas fa-battery-full"></i>
+      </div>
+    </div>
+    <!-- 헤더 바 코드 -->
+    <header class="header">
+      <!-- 왜 column을 div로 두는지는 스테이터스 바에서 설명했다. -->
+      <div class="header__header-column">
+        <a href = "more.html" header__back-btn">
+            <i class="fas fa-arrow-left fa-2x"></i>
+        </a>
+        <h1 class="header__title">Settings</h1>
+      </div>
+      <div class="header__header-column">
+        <!-- 헤더에서는 아이콘들의 간격이 어느 정도 있으니 나중에 css 적용을 위해 span으로 먼저 묶어놓는다. -->
+        <span class="header__icon">
+          <i class="fas fa-search"></i>
+        </span>
+      </div>
+    </header>
+    <!-- 아이콘들.. -->
+    <main class="settings">
+        <section class="settings__sections">
+        <ul class="settings__list">
+            <li class="settings__setting">
+                <span class="settings__icon">
+                    <i class="fas fa-lock"></i>
+                </span>
+                <span class="settings__title">Privacy</span>
+            </li>
+            <li class="settings__setting">
+                <span class="settings__icon">
+                    <i class="far fa-bell"></i>
+                </span>
+                <span class="settings__title">Notifications</span>
+            </li>
+            <li class="settings__setting">
+                <span class="settings__icon">
+                    <i class="far fa-user"></i>
+                </span>
+                <span class="settings__title">Friends</span>
+            </li>
+        </ul>
+        </section>
+    </main>
+  </body>
+</html>
