@@ -49,6 +49,27 @@
         </span>
       </div>
     </header>
+    <!-- 채팅창 -->
+    <main class="chats">
+      <ul class="chats__list">
+        <li class="chats__chat">
+          <!-- 왜 column을 div로 두는지는 스테이터스 바에서 설명했다. -->
+          <div class="chat__column">
+            <img class="chat__avatar" src="images/avatar.jpg" />
+            <!-- div이기 때문에 block. css에서 수정하면 된다. -->
+            <div class="chat__content">
+              <span class="chat__username">
+                Lynn
+              </span>
+              <span class="chat__preview">Going home!</span>
+            </div>
+          </div>
+          <div class="chat__column">
+            <span class="chat__timestamp">Yesterday</span>
+          </div>
+        </li>
+      </ul>
+    </main>
     <!-- 네비게이션 바 (최하단 바) 코드 -->
     <nav class="nav">
       <ul class="nav__list">
