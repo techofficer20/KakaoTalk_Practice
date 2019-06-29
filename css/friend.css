@@ -1,0 +1,16 @@
+.friend {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.friend .friend__avatar {
+  width: 50px;
+  border-radius: 35%;
+}
+
+.friend__avatar.g-avatar {
+  width: 70px;
+  /* friend 클래스 - friend__avatar클래스 - g-avatar 클래스 순으로 들어가 있다.
+  그래서 border-radius 35%가 적용된 것이다. */
+}
