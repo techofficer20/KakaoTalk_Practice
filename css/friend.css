@@ -9,10 +9,10 @@
   border-radius: 38%;
 }
 
-.friend__avatar .g-avatar {
+.my-avatar {
   width: 70px;
-  /* friend 클래스 - friend__avatar클래스 - g-avatar 클래스 순으로 들어가 있다.
-  그래서 border-radius 35%가 적용된 것이다. */
+  border-radius: 38%;
+  margin-right: 15px;
 }
 .friend__avatar .m-avatar {
   width: 60%;
@@ -38,5 +38,19 @@
 }
 .friend__content .friend__status,
 .friend .chat__timestamp {
+  font-size: 12px;
+}
+.friend .friend__now-listening {
+  border: 2px solid #52e084;
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 14px;
+}
+
+.friend__now-listening span {
+  opacity: 0.7;
+}
+
+.friend__now-listening i {
   font-size: 12px;
 }
