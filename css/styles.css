@@ -1,6 +1,7 @@
 @import "reset.css";
 @import "status-bar.css";
 @import "header.css";
+@import "nav-bar.css";
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400, 600");
 body {
   background-color: white;
@@ -10,4 +11,7 @@ body {
 }
 a {
   color: inherit;
+}
+* {
+  box-sizing: border-box;
 }
