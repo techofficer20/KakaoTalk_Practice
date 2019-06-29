@@ -35,8 +35,8 @@
     <header class="header">
       <!-- 왜 column을 div로 두는지는 스테이터스 바에서 설명했다. -->
       <div class="header__header-column">
-        <a href = "index.html" header__back-btn">
-            <i class="fas fa-arrow-left fa-2x"></i>
+        <a href="index.html" class="header__back-btn">
+          <i class="fas fa-arrow-left"></i>
         </a>
         <h1 class="header__title">Best Friend</h1>
       </div>
@@ -46,50 +46,54 @@
           <i class="fas fa-search"></i>
         </span>
         <span class="header__icon">
-            <i class="fas fa-bars"></i>
+          <i class="fas fa-bars"></i>
         </span>
       </div>
     </header>
     <!-- 대화 창 -->
     <main class="chat">
-        <ul class="chat_messages">
-            <span class="chat__timestamp">Friday, Januaru 11, 2019</span>
-            <li class="incoming-message message">
-                <img src="images/avatar.jpg" class = "g-avatar message__avatar" />
-                <div class="message__content">
-                    <span class="message__author">Best Friend</span>
-                    <div class="message__bubble">
-                        Congrats I love you!
-                    </div>
-                </div>
-                <span class="message__timestamp"></span>
-            </li>
-            <li class="incoming-message message">
-                <span class="message__timestamp"></span>
-                <div class="message__content">
-                    <div class="message__bubble">
-                        Thank you see you soon!
-                    </div>
-                </div>
-            </li>
-        </ul>
+      <ul class="chat_messages">
+        <span class="chat__timestamp">Friday, Januaru 11, 2019</span>
+        <li class="incoming-message message">
+          <img src="images/avatar.jpg" class="g-avatar message__avatar" />
+          <div class="message__content">
+            <span class="message__author">Best Friend</span>
+            <div class="message__bubble">
+              Congrats I love you!
+            </div>
+          </div>
+          <span class="message__timestamp"></span>
+        </li>
+        <li class="incoming-message message">
+          <span class="message__timestamp"></span>
+          <div class="message__content">
+            <div class="message__bubble">
+              Thank you see you soon!
+            </div>
+          </div>
+        </li>
+      </ul>
     </main>
     <!-- 채팅 작성 창 -->
     <div class="chat__write">
-        <div class="chat__write-column">
-            <i class="far fa-plus-square"></i>
-        </div>
-        <div class="chat__write-column">
-            <input type = "text" placeholder="Send message" class = "chat__write-input" />
-        </div>
-        <div class="chat__write-column">
-            <span class="chat__write-icon">
-                <i class="far fa-smile-wink"></i>
-            </span>
-            <span class="chat__write-icon">
-                <i class="fas fa-microphone"></i>
-            </span>
-        </div>
+      <div class="chat__write-column">
+        <i class="far fa-plus-square"></i>
+      </div>
+      <div class="chat__write-column">
+        <input
+          type="text"
+          placeholder="Send message"
+          class="chat__write-input"
+        />
+      </div>
+      <div class="chat__write-column">
+        <span class="chat__write-icon">
+          <i class="far fa-smile-wink"></i>
+        </span>
+        <span class="chat__write-icon">
+          <i class="fas fa-microphone"></i>
+        </span>
+      </div>
     </div>
   </body>
 </html>
